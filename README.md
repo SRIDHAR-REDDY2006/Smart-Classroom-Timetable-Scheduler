@@ -1,8 +1,7 @@
-## 👨‍💻 My Contributions (Backend & Infrastructure)
+## 💻 My Role & Key Contributions (Backend Developer)
 
-I architected and developed the core backend microservices and deployment setup for this application:
+I designed and implemented the backend REST API, authentication flow, and PostgreSQL database layer for this application:
 
-* **Transaction Service (`transaction-service`):** Built the Node.js service responsible for handling, processing, and logging cross-border payment transactions (`index.js`, `transaction.log`).
-* **Currency Service (`currency-service`):** Developed the backend service managing currency conversion logic and multi-currency exchange handling.
-* **Background Worker Service (`worker-service`):** Created an asynchronous Node.js worker to process background payment tasks and log execution states (`worker.log`).
-* **API Gateway & Reverse Proxy (`nginx`):** Configured Nginx (`nginx.conf`) to route traffic efficiently across the frontend and backend microservices.
+* **RESTful API Architecture (`Express.js`):** Structured modular backend routes (`src/routes`), server configuration (`src/config`), and request handling (`index.js`) with CORS and environment variable support (`dotenv`).
+* **Authentication & Security (`JWT` & `bcrypt`):** Built secure user authentication and route protection middleware (`src/middleware`) using password hashing (`bcrypt`) and token-based session management (`jsonwebtoken`).
+* **Database Schema & Integration (`PostgreSQL`):** Designed the relational database schema (`database.sql`) and integrated connection pooling and parameterized queries using `node-postgres` (`pg`).
